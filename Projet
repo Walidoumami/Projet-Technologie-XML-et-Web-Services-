@@ -1,0 +1,23 @@
+<? xml version="1.0 »  encoding="UTF-8 »?>
+<Description du projet>
+	<nom>devoir-ws-xml</nom>
+	<commentaire></commentaire>
+	<Projets>
+	</Projets>
+	<buildSpec>
+		<buildCommand>
+			<nom>org.eclipse.jdt.core.javabuilder</name>
+			<Arguments>
+			</Arguments>
+		</buildCommand>
+		<buildCommand>
+			<nom>org.eclipse.m2e.core.maven2Builder</name>
+			<Arguments>
+			</Arguments>
+		</buildCommand>
+	</buildSpec>
+	<Natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+	</Natures>
+</Description du projet>
