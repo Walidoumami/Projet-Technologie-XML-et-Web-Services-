@@ -1,0 +1,83 @@
+<? xml version="1.0 »  encoding="UTF-8 »?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0 » xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance »
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd »>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ma.exemple</groupId>
+  <artifactId>devoir-ws-xml</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <nom>devoir-ws-xml</nom>
+  <!-- FIXME le change sur le site web du projet -->
+  <url>http://www.example.com</url>
+
+  <Propriétés>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </Propriétés>
+
+  <Dépendances>
+    <dépendance>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <portée>test</portée>
+    </dépendance>
+    <!-- https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-ri -->
+	<dépendance>
+	    <groupId>com.sun.xml.ws</groupId>
+	    <artifactId>jaxws-ri</artifactId>
+	    <version>4.0.0</version>
+	    <type>pom</type>
+	</dépendance>
+
+  </Dépendances>
+
+  <construire>
+    <pluginManagement><!-- verrouiller les versions des plugins pour éviter d’utiliser les valeurs par défaut de Maven (peut être déplacé vers le pom parent) -->
+      <Plugins>
+        <!-- cycle de vie propre, voir https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <.plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </.plugin>
+        <!-- cycle de vie par défaut, l’emballage en pot : voir https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+        <.plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </.plugin>
+        <.plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </.plugin>
+        <.plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </.plugin>
+        <.plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.0.2</version>
+        </.plugin>
+        <.plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </.plugin>
+        <.plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </.plugin>
+        <!-- cycle de vie du site, reportez-vous à https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+        <.plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.7.1</version>
+        </.plugin>
+        <.plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.0.0</version>
+        </.plugin>
+      </Plugins>
+    </pluginGestion>
+  </construire>
+</projet>
